@@ -1,0 +1,37 @@
+LOC (Calculator.java): 188
+LOC (Start.java): 26
+LOC (Calculator.java + Start.java): 214
+
+Calculate method:
+
+-Cyclomatic complexity: 12 (using Codalyze, in Visual Studio Code)
+-Cognitive complexity: 13 (without using any tools)
+
+evaluateExpression method:
+
+-Cyclomatic complexity: 12 (Using Codalyze, in Visual Studio Code)
+-Cognitive complexity: 9 (without using any tools)
+
+Static analysis report:
+
+After informal review of the code, the following conclusions were reached:
+
+CALCULATOR FILE:
+
+- Line 4 - Code Smell (Major) - Class 'Calculator' shouldn't be Public
+- Line 18 - Code Smell (Blocker) - Rename method "ToString" to prevent any misunderstanding/clash with method
+            "toString" defined in superclass "java.lang.Object"
+- Line 24 - Code Smell (Minor) - Method 'Run' should be renamed to comply with a naming convention
+- Line 70 - Code Smell (Minor) - Immediately return this expression instead of assigning it 
+            to the temporary variable "textResult"
+          - Declaring a variable only to immediately return or throw it, is considered a bad practice
+- Line 74 - Code Smell (Minor) - Method 'Calculate' should comply with a naming convention 
+- Line 183 - Code Smell (Minor) - 'Return' is considered redundant and should be erased
+
+START FILE:
+
+- Line 6 - Code Smell (Minor) - Rename variable 'Expression' to comply with a naming convention 
+- Line 8/19 - Code Smell (Major) - System.out should be replaced by a logger
+
+
+
