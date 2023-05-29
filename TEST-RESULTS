@@ -57,3 +57,6 @@ Testing the calculator by dividing by zero:
 -5/0 = -Infinity
 4/0 = Infinity
 0/0 = NaN
+
+By typing 'exit', the expected exit from the program is obtained.
+By typing any other text, the program prints "ERROR" on the output which is expected and the user is unable to exit the program.
