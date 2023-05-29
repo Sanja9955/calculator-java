@@ -1,0 +1,59 @@
+*Testing arithmetic operations with positive numbers:
+
+"+" -  2+3=5.0
+"-" -  4-2=2.0
+"*" -  5*8=40.0
+"/" -  8/4=2.0
+
+*Testing arithmetic operations with combination of positive and negative numbers:
+
+"+" -  -9+6=-3.0
+"-" -  -9-7=-16.0
+'*' -  -6*10=-60.0
+"/" -  -10/5=-2.0
+
+Using integers(positive and negative) returns numbers with one decimal point.
+
+
+*Testing arithmetic operations with positive/negative numbers and parentheses:
+
+"+" - (-8)+(-6)= ERROR
+"-" - -10-5=-15
+"*" - 4*(-6)= ERROR
+"/" - (-24)/(-2)= ERROR
+
+The user is unable to add, multiply and divide two negative numbers due to the inability of using parentheses.
+When the user uses parenteses the program will print "ERROR" on the output.
+
+*Testing of arithmetic operation priority:
+
+When testing many possible combinations, calculator didn't make any mistakes and performed all operations in correct order.
+
+*Testing arithmetic operations with decimal numbers:
+
+When using decimal numbers and the result is negative (with value less then 1) the program prints
+the result with unexpected/incorrect rest
+
+for example: 2-2.1= -0.099999905 (instead of -0.9)
+
+
+*Testing arithmetic operations with decimal numbers(where we have 2 numbers and the second number is inverted version of the first one) :
+
+The program prints a result with an approximate value.
+
+for example : 1.3*3.1=4.0299997 (instead of 4.03)
+
+*Testing arithmetic operations with incorrect input:
+
+examples:
+four plus four = "ERROR"
+9++3 = "ERROR"
+4=0 - "ERROR"
+
+All these results are as expected since Calclator does not allow these kind of inputs. When using ',' instead of '.' the program prints "ERROR" on the output
+
+Testing the calculator by dividing by zero:
+
+-5/0 = -Infinity
+4/0 = Infinity
+0/0 = NaN
